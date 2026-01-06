@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requested Games</title>
+    <style>
+        /* --- Setup --- */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1a1a1a 0%, #000 100%);
+        }
+
+        /* --- Header --- */
+        .main-header {
+            font-size: 42px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin: 40px 0;
+            text-transform: uppercase;
+            background: linear-gradient(#4facfe, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- Grid of Rectangles --- */
+        .request-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1000px;
+            padding-bottom: 50px;
+        }
+
+        /* --- Card Styles --- */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(79, 172, 254, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 140px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(79, 172, 254, 0.1);
+            border-color: #4facfe;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .card h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            background: #4facfe;
+            color: #000;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 800;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #00f2fe;
+            transform: scale(1.05);
+        }
+
+        /* Form Card Specific Style */
+        .form-card {
+            background: rgba(79, 172, 254, 0.15);
+            border: 2px dashed #4facfe;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-header">Requested Games</h1>
+
+    <div class="request-grid">
+        
+        <div class="card form-card">
+            <h3>Request a Game</h3>
+            <a href="https://forms.gle/xhWTy62fK1YqxNQA6" target="_blank" class="btn">Open Form</a>
+        </div>
+
+        <div class="card">
+            <h3>Cookie Clicker</h3>
+            <a href="https://theasianone69.github.io/cookieclicker/" target="_blank" class="btn">Play Now</a>
+        </div>
+
+        </div>
+
+</body>
+</html>
